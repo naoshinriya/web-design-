@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>CSS Layout</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+             body{
+                margin:auto 10%; 
+            }
+            
+            #wrapper{
+                width:100%;
+                height:700px; 
+            }
+            #header_wrapper{
+                width:100%;
+                height:150px; 
+                float:left;
+            } 
+            
+            #logo{
+                width:19.7%;
+                height:150px;
+                background:yellow; 
+                float:left; 
+                margin-right:.3%; 
+            }
+            
+            #logo_img{
+                width:100%;
+                height:150px; 
+            }
+            
+            #banner{
+                width:80%;
+                height:150px;
+                background-color:skyblue; 
+                float:left; 
+                color:darkblue;
+                text-align:center;
+                font-size:30px;
+                font-weight:bold;
+                
+            }
+            
+            #menu{
+                background-color:black;
+                width:100%;
+                height:60px;
+                margin-top:3px;
+                margin-bottom:3px; 
+                float:left;
+            }
+            #menu ul{
+                margin:0px;
+                padding:0px; 
+            }
+            #menu ul li{
+                list-style-type: none;
+                float:left;
+                background-color:darkblue;
+                padding:18px;
+                margin-right:1.60%;
+                width:20%;
+                text-align:center;
+                font-size:25px; 
+                border-radius:20px 20px 20px 20px; 
+                transition:2s; 
+            }
+            
+            #menu ul li a{
+                text-decoration:none;
+                color:white; 
+            }
+            
+            
+            #menu li:hover{
+                background-color:purple; 
+                color:white; 
+                border-radius:20px 20px 20px 20px; 
+                transition:2s; 
+            }
+            
+            
+            
+            
+            #content_wrapper{
+                width:100%;
+                height:430px; 
+                float:left;
+            }
+            #left_content{
+                width:32%;
+                height:430px;
+                background-color:pink;
+                float:left; 
+            }
+            
+            #left_content ul{
+                margin:0px;
+                padding:0px; 
+            }
+            
+            #left_content ul li{
+                list-style-type:none;
+                background-color:darkred;
+                text-align:center;
+                font-size:28px;
+                padding:30px;
+                margin-bottom:20px;
+                border-radius:20px 20px 20px 20px; 
+            }
+            #left_content ul li a{
+                text-decoration:none;
+                color:black; 
+            }
+            
+            
+            #mid_content{
+                width:34%;
+                height:430px;
+                background-color:darkpink; 
+                float: left;
+                margin-left:.3%;
+                margin-right:.3%; 
+            }
+            
+            .text_post{
+                margin:10px;
+                padding:10px; 
+                color:black; 
+            }
+            
+            
+            #right_content{
+                width:33%;
+                height:430px;
+                background-color:pink; 
+                float:left; 
+            }
+            
+            #footer{
+                width:100%;
+                height:57px;
+                background-color:black; 
+                margin-top:3px; 
+                float:left; 
+               
+            }
+            #footer p{
+                color:white; 
+                text-align:center;
+              
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wraffer">
+            
+            
+            <div id="header_wraffer">
+                <div id="logo">
+				<img id="logo_img" src="logo.PNG" alt="">
+				</div>
+                <div id="banner">
+				<h1>Primeasia University</h1>
+				<p><i> a mission with a vision </i></p>
+				</div>
+            </div>
+            
+            
+            <div id="menu">
+			    <ul>
+                    <li><a href="">Name</a></li>
+                    <li><a href="">Log In</a></li>
+                    <li><a href="">Sign Up</a></li>
+                    <li><a href="">Registration</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+			</div>
+            
+            <div id="content_wraffer">
+                <div id="left_content">
+				<ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Notices</a></li>
+						<li><a href="">Events</a></li>
+                        <li><a href="">Gallery</a></li>
+                </ul>
+				</div>
+                <div id="mid_content">
+				        <div class="text_post">
+                        <h1>Why Study In Primeasia?</h1>
+                        <p>Primeasia university is a place of excellence in educating men and women, and in meeting the demand of the country.</p>
+                    </div>
+				</div>
+                <div id="right_content">
+				<p>12-Kemal Ataturk Avenue,Banani,Dhaka,Bangladesh<br>  9822133,9821499-501(Ext:122,311,324,333)<br> info@primeasia.edu.bd</p>
+				</div>
+            </div>
+            
+            <div id='footer'>
+			<p>PRIMEASIA UNIVERSITY. All Rights Reserved.</p>
+			</div>
+        </div>
+    </body>
+</html>
